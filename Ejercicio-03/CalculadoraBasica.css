@@ -108,32 +108,32 @@ main{
   input[value="/"]{
 
 	color: #FFFFFF;
- 	background-color:#FF0000;
+ 	background-color:#8B0000;
   }
 
 
   input[value="x"]{
 
 	color: #FFFFFF;
- 	background-color:#FF0000;
+ 	background-color:#8B0000;
   }
 
   input[value="-"]{
 
 	color: #FFFFFF;
- 	background-color:#FF0000;
+ 	background-color:#8B0000;
   }
 
   input[value="+"]{
 
 	color: #FFFFFF;
- 	background-color:#FF0000;
+ 	background-color:#8B0000;
   }
 
   input[value="="]{
 
 	color: #FFFFFF;
- 	background-color:#FF0000;
+ 	background-color:#8B0000;
   }
   
   
