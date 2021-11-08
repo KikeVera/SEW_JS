@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/Kike/Desktop/js/Ejercicio-03/CalculadoraBasica.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CalculadoraBasica</title>
+<link rel="stylesheet" href="./CalculadoraBasica_files/CalculadoraBasica.css">
+<script src="./CalculadoraBasica_files/CalculadoraBasica.js.descarga"></script><script>(function(){class RuffleMimeType{constructor(a,b,c){this.type=a,this.description=b,this.suffixes=c}}class RuffleMimeTypeArray{constructor(a){this.__mimetypes=[],this.__named_mimetypes={};for(let b of a)this.install(b)}install(a){let b=this.__mimetypes.length;this.__mimetypes.push(a),this.__named_mimetypes[a.type]=a,this[a.type]=a,this[b]=a}item(a){return this.__mimetypes[a]}namedItem(a){return this.__named_mimetypes[a]}get length(){return this.__mimetypes.length}}class RufflePlugin extends RuffleMimeTypeArray{constructor(a,b,c,d){super(d),this.name=a,this.description=b,this.filename=c}install(a){a.enabledPlugin||(a.enabledPlugin=this),super.install(a)}}class RufflePluginArray{constructor(a){this.__plugins=[],this.__named_plugins={};for(let b of a)this.install(b)}install(a){let b=this.__plugins.length;this.__plugins.push(a),this.__named_plugins[a.name]=a,this[a.name]=a,this[b]=a}item(a){return this.__plugins[a]}namedItem(a){return this.__named_plugins[a]}get length(){return this.__plugins.length}}const FLASH_PLUGIN=new RufflePlugin("Shockwave Flash","Shockwave Flash 32.0 r0","ruffle.js",[new RuffleMimeType("application/futuresplash","Shockwave Flash","spl"),new RuffleMimeType("application/x-shockwave-flash","Shockwave Flash","swf"),new RuffleMimeType("application/x-shockwave-flash2-preview","Shockwave Flash","swf"),new RuffleMimeType("application/vnd.adobe.flash-movie","Shockwave Flash","swf")]);function install_plugin(a){navigator.plugins.install||Object.defineProperty(navigator,"plugins",{value:new RufflePluginArray(navigator.plugins),writable:!1}),navigator.plugins.install(a),0<a.length&&!navigator.mimeTypes.install&&Object.defineProperty(navigator,"mimeTypes",{value:new RuffleMimeTypeArray(navigator.mimeTypes),writable:!1});for(var b=0;b<a.length;b+=1)navigator.mimeTypes.install(a[b])}install_plugin(FLASH_PLUGIN);})();</script><script src="chrome-extension://jgfebcokmakplfdojibhkjaaknpigamg/dist/ruffle.js?id=78504893409"></script>
+<script>var calculadora= new Calculadora()</script>
+
+</head>
+<body>
+
+<h1>Calculadora</h1>
+
+<main>
+<section>
+<h2>Calculadora Básica</h2>
+<label for="ans">Ans:</label> 
+<input disabled="disabled" type="text" id="ans">
+
+<input type="button" value="mrc" onclick="calculadora.leerMemoria()" ondblclick="calculadora.borrarMemoria()">
+<input type="button" value="m-" onclick="calculadora.restarNumeroMemoria()">
+<input type="button" value="m+" onclick="calculadora.sumarNumeroMemoria()">
+<input type="button" value="/" onclick="calculadora.dividir()">
+
+
+<input type="button" value="7" onclick="calculadora.digito(&#39;7&#39;)">
+<input type="button" value="8" onclick="calculadora.digito(&#39;8&#39;)">
+<input type="button" value="9" onclick="calculadora.digito(&#39;9&#39;)">
+<input type="button" value="x" onclick="calculadora.multiplicar()">
+
+
+<input type="button" value="4" onclick="calculadora.digito(&#39;4&#39;)">
+<input type="button" value="5" onclick="calculadora.digito(&#39;5&#39;)">
+<input type="button" value="6" onclick="calculadora.digito(&#39;6&#39;)">
+<input type="button" value="-" onclick="calculadora.restar()">
+
+
+<input type="button" value="1" onclick="calculadora.digito(&#39;1&#39;)">
+<input type="button" value="2" onclick="calculadora.digito(&#39;2&#39;)">
+<input type="button" value="3" onclick="calculadora.digito(&#39;3&#39;)">
+<input type="button" value="+" onclick="calculadora.sumar()">
+
+
+<input type="button" value="0" onclick="calculadora.digito(&#39;0&#39;)">
+<input type="button" value="." onclick="calculadora.decimal()">
+<input type="button" value="C" onclick="calculadora.borrar()">
+<input type="button" value="=" onclick="calculadora.evaluar()">
+</section>
+</main>
+
+
+</body></html>
