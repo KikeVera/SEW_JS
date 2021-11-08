@@ -205,6 +205,7 @@ class CalculadoraCientifica extends Calculadora{
 		this.ang="deg";
 		this.FE=false;
 		this.hiper=false;
+		this.invertido=false;
 		document.addEventListener('keydown', (event) => {
 			const keyName = event.key;
 			
@@ -281,7 +282,7 @@ class CalculadoraCientifica extends Calculadora{
 			}
 
 			if(keyName=='f'){
-				this.FE;
+				this.cambiaExponente();
 			}
 
 
@@ -458,9 +459,13 @@ class CalculadoraCientifica extends Calculadora{
 	calculaSin(){
 		if(this.pantalla!=""){
 			var x;
-		
 			x=this.calculaAngulo();
-			this.pantalla =Math.sin(x);
+			if(!this.invertido){
+				this.pantalla =Math.sin(x);
+			}
+			else{
+				this.pantalla =Math.asin(x);
+			}
 			document.getElementById("ans").value=this.pantalla;
 			this.calculations.push(Number(this.pantalla));
 		
@@ -473,7 +478,12 @@ class CalculadoraCientifica extends Calculadora{
 			var x;
 		
 			x=this.calculaAngulo();
-			this.pantalla =Math.sinh(x);
+			if(!this.invertido){
+				this.pantalla =Math.sinh(x);
+			}
+			else{
+				this.pantalla =Math.asinh(x);
+			}
 			document.getElementById("ans").value=this.pantalla;
 			this.calculations.push(Number(this.pantalla));
 		
@@ -487,7 +497,12 @@ class CalculadoraCientifica extends Calculadora{
 			var x;
 		
 			x=this.calculaAngulo();
-			this.pantalla =Math.cos(x);
+			if(!this.invertido){
+				this.pantalla =Math.cos(x);
+			}
+			else{
+				this.pantalla =Math.acos(x);
+			}
 			document.getElementById("ans").value=this.pantalla;
 			this.calculations.push(Number(this.pantalla));
 		
@@ -500,7 +515,12 @@ class CalculadoraCientifica extends Calculadora{
 			var x;
 		
 			x=this.calculaAngulo();
-			this.pantalla =Math.cosh(x);
+			if(!this.invertido){
+				this.pantalla =Math.cosh(x);
+			}
+			else{
+				this.pantalla =Math.acosh(x);
+			}
 			document.getElementById("ans").value=this.pantalla;
 			this.calculations.push(Number(this.pantalla));
 		
@@ -513,7 +533,12 @@ class CalculadoraCientifica extends Calculadora{
 			var x;
 		
 			x=this.calculaAngulo();
-			this.pantalla =Math.tan(x);
+			if(!this.invertido){
+				this.pantalla =Math.tan(x);
+			}
+			else{
+				this.pantalla =Math.atan(x);
+			}
 			document.getElementById("ans").value=this.pantalla;
 			this.calculations.push(Number(this.pantalla));
 		
@@ -526,7 +551,12 @@ class CalculadoraCientifica extends Calculadora{
 			var x;
 		
 			x=this.calculaAngulo();
-			this.pantalla =Math.tanh(x);
+			if(!this.invertido){
+				this.pantalla =Math.tanh(x);
+			}
+			else{
+				this.pantalla =Math.atanh(x);
+			}
 			document.getElementById("ans").value=this.pantalla;
 			this.calculations.push(Number(this.pantalla));
 		
@@ -596,42 +626,82 @@ class CalculadoraCientifica extends Calculadora{
 	
 	}
 	
-	cambiaTrigonometria(){
-		if(this.hiper){
-			this.hiper=false;
-		}
+	inv(){
+		if(!this.invertido){
+			
+			this.invertido=true
+		}	
 		else{
+			
+			this.invertido=false
+		}
+		
+		this.modificaBotones();
+		
+	}
+	
+	cambiaTrigonometria(){
+		if(!this.hiper){
 			this.hiper=true;
 		}
-		if(document.getElementById("sin").value=="sin"){
-			document.getElementById("sin").value="sinh";
-			document.getElementById("sin").setAttribute("onclick","calculadora.calculaSinh()");
+		else{
+			this.hiper=false;
+		}
+		
+		this.modificaBotones();
+		
+		
+		
+		
+		
+	}
+	
+	modificaBotones(){
+		
+		if(this.hiper){
+			if(!this.invertido){
+				document.getElementById("sin").value="sinh";
+				document.getElementById("sin").setAttribute("onclick","calculadora.calculaSinh()");
+				document.getElementById("cos").value="cosh";
+				document.getElementById("cos").setAttribute("onclick","calculadora.calculaCosh()");
+				document.getElementById("tan").value="tanh";
+				document.getElementById("tan").setAttribute("onclick","calculadora.calculaTanh()");
+			
+			}
+			
+			else{
+				document.getElementById("sin").value="sinh^-1";
+				document.getElementById("sin").setAttribute("onclick","calculadora.calculaSinh()");
+				document.getElementById("cos").value="cosh^-1";
+				document.getElementById("cos").setAttribute("onclick","calculadora.calculaCosh()");
+				document.getElementById("tan").value="tanh^-1";
+				document.getElementById("tan").setAttribute("onclick","calculadora.calculaTanh()");
+				
+			}
 		}
 		
 		else{
-			document.getElementById("sin").value="sin";
-			document.getElementById("sin").setAttribute("onclick","calculadora.calculaSin()");
+			if(!this.invertido){
+				document.getElementById("sin").value="sin";
+				document.getElementById("sin").setAttribute("onclick","calculadora.calculaSin()");
+				document.getElementById("cos").value="cos";
+				document.getElementById("cos").setAttribute("onclick","calculadora.calculaCos()");
+				document.getElementById("tan").value="tan";
+				document.getElementById("tan").setAttribute("onclick","calculadora.calculaTan()");
+			}
+			
+			else{
+				document.getElementById("sin").value="sin^-1";
+				document.getElementById("sin").setAttribute("onclick","calculadora.calculaSinh()");
+				document.getElementById("cos").value="cos^-1";
+				document.getElementById("cos").setAttribute("onclick","calculadora.calculaCosh()");
+				document.getElementById("tan").value="tan^-1";
+				document.getElementById("tan").setAttribute("onclick","calculadora.calculaTanh()");
+				
+			}
 		}
 		
-		if(document.getElementById("cos").value=="cos"){
-			document.getElementById("cos").value="cosh";
-			document.getElementById("cos").setAttribute("onclick","calculadora.calculaCosh()");
-		}
 		
-		else{
-			document.getElementById("cos").value="cos";
-			document.getElementById("cos").setAttribute("onclick","calculadora.calculaCos()");
-		}
-		
-		if(document.getElementById("tan").value=="tan"){
-			document.getElementById("tan").value="tanh";
-			document.getElementById("tan").setAttribute("onclick","calculadora.calculaTanh()");
-		}
-		
-		else{
-			document.getElementById("tan").value="tan";
-			document.getElementById("tan").setAttribute("onclick","calculadora.calculaTan()");
-		}
 	}
 	
 	

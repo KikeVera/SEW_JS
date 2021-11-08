@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///C:/Users/UO246711/Desktop/js/Ejercicio-05/CalculadoraRPN.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CalculadoraRPN</title>
+<link rel="stylesheet" href="./CalculadoraRPN_files/CalculadoraRPN.css">
+<script src="./CalculadoraRPN_files/CalculadoraRPN.js.descargar"></script>
+<script>var calculadora= new CalculadoraRPN()</script>
+
+</head>
+<body>
+
+<h1>Calculadora</h1>
+
+<main>
+<section>
+<h2>Calculadora RPN</h2>
+
+
+<label for="ans">Num:</label> 
+<input disabled="disabled" type="text" id="ans">
+
+
+
+
+<textarea disabled="disabled">Pila[2] = 888
+Pila[1] = 888
+</textarea>
+
+
+<input type="button" value="C" onclick="calculadora.borrar()">
+<input type="button" value="DEL" onclick="calculadora.back()">
+
+
+
+
+<input type="button" value="sin" onclick="calculadora.calculaSin()">
+<input type="button" value="cos" onclick="calculadora.calculaCos()">
+<input type="button" value="tan" onclick="calculadora.calculaTan()">
+<input type="button" value="x²" onclick="calculadora.calcularCuadrado()">
+
+<input type="button" value="arcsin" onclick="calculadora.calculaArcSin()">
+<input type="button" value="arccos" onclick="calculadora.calculaArcCos()">
+<input type="button" value="arctan" onclick="calculadora.calculaArcTan()">
+<input type="button" value="√" onclick="calculadora.calculaRaiz()">
+
+
+<input type="button" value="log" onclick="calculadora.calculaLogaritmo()">
+<input type="button" value="n!" onclick="calculadora.calcularFactorial()">
+<input type="button" value="π" onclick="calculadora.digito(&#39;3.141592653589793&#39;)">
+<input type="button" value="/" onclick="calculadora.dividir()">
+
+
+
+<input type="button" value="7" onclick="calculadora.digito(&#39;7&#39;)">
+<input type="button" value="8" onclick="calculadora.digito(&#39;8&#39;)">
+<input type="button" value="9" onclick="calculadora.digito(&#39;9&#39;)">
+<input type="button" value="x" onclick="calculadora.multiplicar()">
+
+
+
+<input type="button" value="4" onclick="calculadora.digito(&#39;4&#39;)">
+<input type="button" value="5" onclick="calculadora.digito(&#39;5&#39;)">
+<input type="button" value="6" onclick="calculadora.digito(&#39;6&#39;)">
+<input type="button" value="-" onclick="calculadora.restar()">
+
+
+
+<input type="button" value="1" onclick="calculadora.digito(&#39;1&#39;)">
+<input type="button" value="2" onclick="calculadora.digito(&#39;2&#39;)">
+<input type="button" value="3" onclick="calculadora.digito(&#39;3&#39;)">
+<input type="button" value="+" onclick="calculadora.sumar()">
+
+
+<input type="button" value="+-" onclick="calculadora.cambiaSigno()">
+<input type="button" value="0" onclick="calculadora.digito(&#39;0&#39;)">
+<input type="button" value="." onclick="calculadora.decimal()">
+<input type="button" value="Enter" onclick="calculadora.enter()">
+
+</section>
+</main>
+
+
+</body></html>
