@@ -1,7 +1,4 @@
-
-  
- 
-  body{
+body{
 	 font: 400 1em ARIAL, sans-serif;
 	color: #000000;
 	background-color:#E3E4E5;
@@ -21,7 +18,7 @@ h1{
 }
 
 h2{
-	 grid-column: span 4;
+	 grid-column: span 6;
 	  font: 400 1.8em ARIAL, sans-serif;
 	  text-align:center;
 	  
@@ -44,7 +41,7 @@ main{
 	
 	 text-align:center;
 	 display: grid;
-    grid-template-columns: repeat(4,5em);
+    grid-template-columns: repeat(6,6em);
     align-items: center ;
     
     overflow-x: auto;
@@ -55,20 +52,20 @@ main{
   
   input[type=text]{
 	  
-	  grid-column: span 3;
+	  grid-column: span 1;
 	  margin-bottom: 0.5em;
 	  font: 400 1.5em ARIAL, sans-serif;
 	  color: #000000;
 	   
 	   background-color:#FFFFFF;
-	   width:9em;
+	   width:3.5em;
 	   height:2em;
 	   
 	   
   }
   
   textarea{
-	  grid-column: span 4;
+	  grid-column: span 6;
 	  overflow-y: scroll;
 	  text-align:center;
 	   background-color:#FFFFFF ;
@@ -98,42 +95,39 @@ main{
 	  color: #FFFFFF;
 	  
 	   background-color:#626262;
-	   width:4em;
+	   width:5em;
 	   height:3em;
 	   
   }
 
- 
 
-  input[value="/"]{
+  
 
-	color: #FFFFFF;
- 	background-color:#8B0000;
-  }
-
-  input[value="x"]{
+  input[value="Dias"]{
 
 	color: #FFFFFF;
  	background-color:#8B0000;
   }
+  
+  input[value="Año"]{
 
-  input[value="-"]{
-
+	grid-column: span 4;
 	color: #FFFFFF;
- 	background-color:#8B0000;
+ 	background-color:#000000;
+  }
+  
+  input[value="Mes"]{
+	grid-column: span 4;
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+  
+  input[value="Dia"]{
+	grid-column: span 4;
+	color: #FFFFFF;
+ 	background-color:#000000;
   }
 
-  input[value="+"]{
-
-	color: #FFFFFF;
- 	background-color:#8B0000;
-  }
-
-  input[value="="]{
-
-	color: #FFFFFF;
- 	background-color:#8B0000;
-  }
   
   input[value="Enter"]{
 
@@ -142,13 +136,23 @@ main{
   }
   
   input[value="DEL"]{
-	grid-column: span 3;
+
 	color: #FFFFFF;
  	background-color:#000000;
   }
   input[value="C"]{
 	color: #FFFFFF;
  	background-color:#000000;
+  }
+  
+  input[value="Comprobar"]{
+	grid-column: span 6;
+	width:35em;
+	
+  }
+  
+  p{
+	  grid-column: span 6;
   }
   
  
