@@ -38,7 +38,7 @@ main{
   
   section{
 	  margin: auto;
-	
+	background-color:#F;
 	 text-align:center;
 	 display: grid;
     grid-template-columns: repeat(5,5em);

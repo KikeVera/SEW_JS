@@ -4,6 +4,21 @@ class CalculadoraRPN{
 	constructor (){
        this.pantalla=""; 
 	   this.pila=[];
+	   document.addEventListener('keydown', (event) => {
+		const keyName = event.key;
+		if(keyName=='0' || keyName=='1' || keyName=='2' || keyName=='3' || keyName=='4' || keyName=='5' || keyName=='6' || keyName=='7' || keyName=='8' || keyName=='9'){
+			this.digito(Number(keyName));
+		}
+
+		else if(keyName=='b'){
+				this.back();
+			}
+		else if(keyName=='e'){
+				this.enter();
+			}
+
+	
+	  });
 	   
 		
 		

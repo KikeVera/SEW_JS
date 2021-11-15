@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="GeoLocalizacion.css" />
+
+	<script src="GeoLocalizacion.js"></script>
+	
+	<script>var geoL= new GeoL()</script>
+	<script>geoL.definirFuncion()</script>
+	<script>geoL.defineCentro(43.4418800,-5.8165700)</script>
+	<script>geoL.definirDesplazar()</script>
+	
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoAdfDnwfjlipFtRhfrTS8M0UFdt8UxHY&callback=geoL.initMap"></script>
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoAdfDnwfjlipFtRhfrTS8M0UFdt8UxHY&callback=geoL.desplazar"></script>
+
+	
+
+	
+    <title>GeoLocalizacion</title> 
+</head>
+
+<body>
+    
+	
+    <h1 id="titulo">Geo Localizacion</h1>
+	
+	
+   
+	
+	<p>Mapa:</p>
+	
+	
+	
+	<div id="mapa"></div>
+	<p>Texto en español para que la herramienta de validación TAW me detecte bien el idioma</p>
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+   
+	
+	
+	
+</body>
+</html>

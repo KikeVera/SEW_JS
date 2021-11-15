@@ -221,100 +221,12 @@ class CalculadoraCientifica extends Calculadora{
 				this.calcularFactorial();
 			}
 
-			if(keyName=='p'){
-				this.digito('3.141592653589793');
-			}
-
-			if(keyName=='e'){
-				this.digito('2.718281828459045');
-			}
 
 			if(keyName=='b'){
 				this.back();
 			}
 
-			if(keyName=='r'){
-				this.calculaRaiz();
-			}
-
-			if(keyName=='n'){
-				this.calcularPEnesima();
-			}
-
-			if(keyName=='l'){
-				this.calculaLogaritmo();
-			}
-
-			if(keyName=='x'){
-				this.exponente();
-			}
-
-			if(keyName=='%'){
-				this.calculaResto();
-			}
-
-			if(keyName=='a'){
-				this.calcularCuadrado();
-			}
-
-			if(keyName=='i'){
-				this.calculaPotencia10();
-			}
-
-			if(keyName=='g'){
-				this.cambiaSigno();
-			}
-
-			if(keyName=='v'){
-				this.previusCalculation();
-			}
-
-			if(keyName=='#'){
-				this.guardarEnMemoria();
-			}
-
-			if(keyName=='o'){
-				this.cambiaTrigonometria();
-			}
-
-			if(keyName=='u'){
-				this.cambiaUdsAngulo();
-			}
-
-			if(keyName=='f'){
-				this.cambiaExponente();
-			}
-
-
-			if(keyName=='s'){
-				if(!this.hiper){
-					this.calculaSin();
-				}
-
-				else{
-					this.calculaSinh();
-				}
-			}
-
-			if(keyName=='c'){
-				if(!this.hiper){
-					this.calculaCos();
-				}
-
-				else{
-					this.calculaCosh();
-				}
-			}
-
-			if(keyName=='t'){
-				if(!this.hiper){
-					this.calculaTan();
-				}
-
-				else{
-					this.calculaTanh();
-				}
-			}
+			
 	
 			
 			

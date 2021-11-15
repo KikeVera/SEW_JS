@@ -41,41 +41,7 @@ class CalculadoraRPN{
 		else if(keyName=='!'){
 				this.calcularFactorial();
 			}
-		else if(keyName=='p'){
-				this.digito('3.141592653589793');
-			}
-			
-		else if(keyName=='l'){
-				this.calculaLogaritmo();
-			}
-		else if(keyName=='u'){
-				this.calcularCuadrado();
-			}
-		else if(keyName=='g'){
-				this.cambiaSigno();
-			}
-		else if(keyName=='s'){
-				this.calculaSin();
-			}
 
-		else if(keyName=='o'){
-				this.calculaCos();
-			}
-
-		else if(keyName=='t'){
-				this.calculaTan();
-			}
-		else if(keyName=='a'){
-				this.calculaArcSin();
-			}
-
-		else if(keyName=='r'){
-				this.calculaArcCos();
-			}
-
-		else if(keyName=='n'){
-				this.calculaArcTan();
-			}
 		else if(keyName=='b'){
 				this.back();
 			}

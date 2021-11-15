@@ -32,11 +32,13 @@ h2{
 
 main{
 	  display: flex;
+	  
    
 }
  
   
   section{
+	  
 	  margin: auto;
 	
 	 text-align:center;
