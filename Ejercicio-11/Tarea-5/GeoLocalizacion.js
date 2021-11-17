@@ -4,8 +4,6 @@ class GeoL{
 	
 	
   constructor (){
-		this.a=1;
-		this.b=2;
 		
 		
 	
@@ -14,58 +12,50 @@ class GeoL{
 	
 	definirFuncion(){
 		this.initMap=function initMap(){
-			var centro = {lat: this.a, lng: this.b};
-			var mapa = new google.maps.Map(document.getElementById('mapa'),{zoom: 8,center:centro});
 			
-			var marcador = new google.maps.Marker({position:centro,map:mapa});
-		}
-		
-	}
-	
-	definirDesplazar(){
-		this.desplazar=function desplazar(){
-			var centro = {lat: this.a, lng: this.b};
-			var mapaGeoposicionado = new google.maps.Map(document.getElementById('mapa'),{zoom: 8,center:centro});
-			
-			var marcador = new google.maps.Marker({position:centro,map:mapaGeoposicionado});
-			var infoWindow = new google.maps.InfoWindow;
-			
-		
 			if (navigator.geolocation) {
 				navigator.geolocation.getCurrentPosition(function(position) {
-				var pos = {
+				var centro = {
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
+				var mapa = new google.maps.Map(document.getElementsByTagName("main")[0],{zoom: 8,center:centro});
+				var marcador = new google.maps.Marker({position:centro,map:mapa});
+				var infoWindow = new google.maps.InfoWindow;
+				
 
-				infoWindow.setPosition(pos);
+				infoWindow.setPosition(centro);
 				infoWindow.setContent('Localización encontrada');
-				infoWindow.open(mapaGeoposicionado);
-				mapaGeoposicionado.setCenter(pos);
-				}, function() {
-				handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
-				});
-				} else {
-         
-			handleLocationError(false, infoWindow, mapaGeoposicionado.getCenter());
-				}
-				}
+				infoWindow.open(mapa);
+				
+			
+				},function() {
+					var centro = {
+						lat: 0,
+						lng: 0
+					};
+					var mapa = new google.maps.Map(document.getElementsByTagName("main")[0],{zoom: 8,center:centro});
+					var infoWindow = new google.maps.InfoWindow;
+				
 
-		function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-			infoWindow.setPosition(pos);
-			infoWindow.setContent(browserHasGeolocation ?
-                              'Error: Ha fallado la geolocalizaciÃ³n' :
-                              'Error: Su navegador no soporta geolocalizaciÃ³n');
-			infoWindow.open(mapaGeoposicionado);
+					infoWindow.setPosition(centro);
+					infoWindow.setContent('No se ha podido obtener localizacion');
+					infoWindow.open(mapa);
+				});
+				} 
+			
+			
+		
+			
+		
+			
 		
 		}
+		
 	}
 	
 	
-	defineCentro(c1,c2){
-		this.a=c1;
-		this.b=c2;
-	}
+	
 	
 	
 

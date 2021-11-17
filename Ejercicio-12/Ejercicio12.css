@@ -48,21 +48,36 @@ h1 {
 	  
   }
   
+  textarea{
+	   overflow-y: scroll;
+	  color: #000000;
+	   background-color:#FFFFFF ;
+	  margin-left:20%;
+	   margin-right:20%;
+	   height:15em;
+	  width:60%;
+  }
   
   
   
   
- 
+
   
-  main {
-    height: 50em;
-    width: 100%;
-}
+   label{
+	  font: 400 1em ARIAL, sans-serif;
+	  background-color:#E3E4E5;
+	  color: #000000;
+  }
   
- 
   
   
- 
+  
+  
+  
+  
+  
+  
+  
   
   
   
