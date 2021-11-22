@@ -69,6 +69,14 @@ h1 {
 	  color: #000000;
   }
   
+  @media (max-width: 450px) {
+     #titulo{
+       
+	   font-size: 1.5em;
+     }
+	 
+  }
+  
   
   
   

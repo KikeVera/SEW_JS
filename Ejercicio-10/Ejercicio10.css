@@ -82,6 +82,14 @@ td{
     
   
 }
+
+@media (max-width: 450px) {
+     #titulo{
+       
+	   font-size: 1.5em;
+     }
+	 
+  }
   
   
   

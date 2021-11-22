@@ -58,6 +58,14 @@ h1 {
     height: 50em;
     width: 100%;
 }
+
+@media (max-width: 450px) {
+     #titulo{
+       
+	   font-size: 1.5em;
+     }
+	 
+  }
   
  
   

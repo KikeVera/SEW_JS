@@ -74,6 +74,14 @@ h1 {
 	   height:1.5em;
   }
   
+  @media (max-width: 450px) {
+     #titulo{
+       
+	   font-size: 1.5em;
+     }
+	 
+  }
+  
  
   
   
