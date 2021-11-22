@@ -75,7 +75,7 @@ class GeoL{
         var sensor = "&sensor=false"; 
         
         this.imagenMapa = url + centro + zoom + tamaño + marcador + sensor +tipo+ apiKey;
-       document.getElementsByTagName("section")[1].innerHTML = document.getElementsByTagName("section")[1].innerHTML+ "<img src='"+this.imagenMapa+"'/>";
+       document.getElementsByTagName("section")[1].innerHTML = document.getElementsByTagName("section")[1].innerHTML+ "<img alt=\"mapa\" src='"+this.imagenMapa+"'/>";
     }
 	
 	
