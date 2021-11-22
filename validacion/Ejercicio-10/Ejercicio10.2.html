@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="Ejercicio10.css">
+	<script src="Ejercicio10.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>var petroleo= new PetroleoJS()</script>
+	
+	
+	
+	
+    <title>Petroleo</title> 
+</head>
+
+<body>
+    
+	
+    <h1>Petróleo</h1>
+	<h2>Filtros</h2>
+	<p>Solo se proporcionan datos a partir del 2021-09-22 y para BrentOil y WTIOil, estandars muy usados en Europa y América respectivamente</p>
+		<label for="start">Fecha inicio:</label>
+		<input type="date" id="start" min="2021-09-22">
+	   
+	   <label for="end">Fecha final:</label>
+	   <input type="date" id="end" min="2021-09-23">
+	   
+		<label for="zona">Zona:</label>
+		<input list="zonaList" id="zona">
+		<datalist id="zonaList">
+			<option value="Europa">
+			</option><option value="América">
+		</option></datalist>
+		
+		<label for="moneda">Unidad monetaria:</label>
+		<input list="monedaList" id="moneda">
+		<datalist id="monedaList">
+			<option value="USD">
+			</option><option value="EUR">
+			</option><option value="GBP">
+		</option></datalist>
+		
+		<input type="button" value="Buscar" onclick="petroleo.cargarDatos()">
+   
+	<section><h2>Precio del petróleo</h2><p>Datos del precio del petróleo en la zona, fecha y unidad monetaria seleccionada</p><table><thead><tr><th>Fecha</th><th>Precio</th></tr></thead><tbody><tr><td>2021-11-01</td><td>71.9 EUR/barril</td></tr><tr><td>2021-11-02</td><td>72.96 EUR/barril</td></tr><tr><td>2021-11-03</td><td>73.14 EUR/barril</td></tr><tr><td>2021-11-04</td><td>70.55 EUR/barril</td></tr><tr><td>2021-11-05</td><td>69.68 EUR/barril</td></tr><tr><td>2021-11-06</td><td>71.55 EUR/barril</td></tr><tr><td>2021-11-07</td><td>71.61 EUR/barril</td></tr><tr><td>2021-11-08</td><td>71.72 EUR/barril</td></tr><tr><td>2021-11-09</td><td>71.96 EUR/barril</td></tr><tr><td>2021-11-10</td><td>73.1 EUR/barril</td></tr><tr><td>2021-11-11</td><td>71.86 EUR/barril</td></tr><tr><td>2021-11-12</td><td>72.17 EUR/barril</td></tr><tr><td>2021-11-13</td><td>71.74 EUR/barril</td></tr></tbody></table></section>
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+   
+	
+	
+	
+
+</body></html>

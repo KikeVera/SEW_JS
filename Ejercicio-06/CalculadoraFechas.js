@@ -435,7 +435,7 @@ class CalculadoraFechas extends CalculadoraRPN{
 	}
 	
 	getFestivos(){
-		if(this.length>=2){
+		if(this.pila.length>=2){
 			var end=this.pila.pop();
 			var start=this.pila.pop();
 			

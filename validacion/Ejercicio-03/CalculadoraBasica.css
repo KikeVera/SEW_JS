@@ -1,0 +1,146 @@
+body{
+	 font: 400 1em ARIAL, sans-serif;
+	color: #000000;
+	background-color:#E3E4E5;
+}
+
+
+h1{
+	
+	font: 400 2em ARIAL, sans-serif;
+	  text-align:center;
+	  
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  text-decoration:underline;
+	  
+	
+}
+
+h2{
+	 grid-column: span 4;
+	  font: 400 1.8em ARIAL, sans-serif;
+	  text-align:center;
+	  
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  
+	  
+  }
+
+
+
+main{
+	  display: flex;
+	  
+   
+}
+ 
+  
+  section{
+	  
+	  margin: auto;
+	
+	 text-align:center;
+	 display: grid;
+    grid-template-columns: repeat(4,5em);
+    align-items: center ;
+    
+    overflow-x: auto;
+	 
+	
+	 
+  }
+  
+  input[type=text]{
+	  
+	  grid-column: span 3;
+	  margin-bottom: 0.5em;
+	  font: 400 1.5em ARIAL, sans-serif;
+	  color: #000000;
+	   
+	   background-color:#FFFFFF;
+	   width:9.3em;
+	   height:2em;
+	   
+	   
+  }
+  
+  
+  label{
+	
+	  font: 400 1.5em ARIAL, sans-serif;
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  
+  }
+  
+  
+  input[type=button]{
+	  
+	 
+	  margin: 0.2em 0.4em;
+	  font: 400 1em ARIAL, sans-serif;
+	  color: #FFFFFF;
+	  
+	   background-color:#626262;
+	   width:4em;
+	   height:3em;
+	   
+  }
+
+  input[value="mrc"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  input[value="m-"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  input[value="m+"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  input[value="/"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+
+  input[value="x"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  input[value="-"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  input[value="+"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  input[value="="]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+  
+  
+  
+	  
+  
+  
+  

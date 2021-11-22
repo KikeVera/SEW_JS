@@ -13,6 +13,7 @@ class TiempoJS{
 		this.urlMadrid="http://api.openweathermap.org/data/2.5/weather?q=" + "Madrid" + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
 		
 		
+		
     }
 	
 	cargarDatosOviedo(){
@@ -214,6 +215,8 @@ class TiempoJS{
 		
 		
 	}
+	
+	
 	
 	
 	

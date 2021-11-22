@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="Ejercicio12.css">
+	<script src="Ejercicio12.js"></script>
+	<script>var lector= new Lector()</script>
+	
+	
+	
+	
+	
+	
+	
+	
+    <title>Lector archivos</title> 
+</head>
+
+<body>
+    
+	
+    <h1 id="titulo">Lector archivos</h1>
+	
+	<label for="archivoTexto">Seleccione archivo de texto:</label> 
+   <input type="file" id="archivoTexto" onchange="lector.leerArchivo(this.files);" multiple="">
+	
+	<h2>Datos archivo</h2>
+	<p>Datos del archivo examinado</p>
+	<textarea disabled="disabled">Nombre del archivo: ejemplo.json
+Tamaño del archivo: 682 bytes
+Tipo del archivo: application/json
+Fecha de la última modificación: Wed Nov 17 2021 01:31:11 GMT+0100 (hora estándar de Europa central)
+Nombre del archivo: ejemplo.txt
+Tamaño del archivo: 1293 bytes
+Tipo del archivo: text/plain
+Fecha de la última modificación: Wed Nov 17 2021 01:29:28 GMT+0100 (hora estándar de Europa central)
+</textarea>
+	
+	<h2>Contenido archivo</h2>
+	<p>Contenido del archivo examinado</p>
+	<textarea disabled="disabled">
+ Error : no se puede leer el contenido del archivoEl problema de las N reinas es un puzle que consiste en poner N reinas en un tablero de ajedrez de N x N sin que se amenacen, originalmente el problema se realizaba solo con 8 reinas en un tablero de ajedrez convencional, pero el problema se ha extrapo-lado a diferentes tamaños encontrando todas las soluciones hasta un valor de N=26 e intentos y dimensiones mucho mayores que llevan cantidad de tiempo enormes resolver, en [1] hay información más desarrollada.
+
+Los métodos más tradicionales para resolver el problema son los algoritmos recursi-vos, el más básico es por backtracking a fuerza bruta, es decir, explorando todos los casos hasta encontrar una solución, lo cual hace el problema escale de forma expo-nencial haciéndolo inviable en problemas muy grandes. Usando backtracking con búsqueda en profundidad y con” ramifica y poda”, eliminando aquellos nodos por donde ya es imposible encontrar una solución y quedándonos con la primera encon-trada el algoritmo mejora bastante. Sin embargo, hay otros métodos menos tradicio-nales con las que también se puede resolver el problema, como son la programación con restricciones, la programación lógica, los algoritmos genéticos y la búsqueda heurística [2]. Siendo los dos últimos los usados en este estudio.
+
+</textarea>
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+   
+	
+	
+	
+
+
+</body></html>

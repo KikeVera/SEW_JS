@@ -40,21 +40,7 @@ class Calculadora{
 			this.borrar();
 		}
 		
-		else if(keyName==']'){
-			this.sumarNumeroMemoria();
-		}
-
-		else if(keyName=='['){
-			this.restarNumeroMemoria();
-		}
-
-		else if(keyName=='{'){
-			this.leerMemoria();
-		}
-
-		else if(keyName=='}'){
-			this.borrarMemoria();
-		}
+		
 
 		
 		

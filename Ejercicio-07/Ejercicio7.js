@@ -3,7 +3,7 @@ class RasmusJS{
 	
 	constructor (){
        this.recorrer=false;
-		
+		this.bh=false;
 		
 		
     }
@@ -35,20 +35,25 @@ class RasmusJS{
 	añadirBreveHistoria(){
 		
 		
-		var titulo = "<h3>Breve historia PHP</h3>";
-		
-		
-		var parrafo = "<p>Fue originalmente diseñado en Perl, con base en la escritura de un grupo de CGI binarios escritos en el lenguaje C. El 8 de junio de 1995 fue publicado \"Personal Home Page Tools\" después de que Lerdorf lo combinara con su propio Form Interpreter para crear PHP/FI.</p>";
-		
-		$("table").after(titulo);
-		$("h3:eq(4)").after(parrafo);
-		
+		if(!this.bh){
+			var titulo = "<h3>Breve historia PHP</h3>";
+			
+			
+			var parrafo = "<p>Fue originalmente diseñado en Perl, con base en la escritura de un grupo de CGI binarios escritos en el lenguaje C. El 8 de junio de 1995 fue publicado \"Personal Home Page Tools\" después de que Lerdorf lo combinara con su propio Form Interpreter para crear PHP/FI.</p>";
+			
+			$("table").after(titulo);
+			$("h3:eq(4)").after(parrafo);
+		}
+		this.bh=true;
 		
 	}
 	
 	eliminarBreveHistoria(){
-		$("h3:eq(4)").remove();
-		$("p:eq(3)").remove();
+		if(this.bh){
+			$("h3:eq(4)").remove();
+			$("p:last").remove();
+		}
+		this.bh=false;
 		
 	}
 

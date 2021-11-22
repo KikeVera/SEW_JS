@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CalculadoraFechas</title>
+<link rel="stylesheet" href="CalculadoraFechas.css">
+<script src="CalculadoraFechas.js"></script>
+<script>var calculadora= new CalculadoraFechas()</script>
+
+</head>
+<body>
+
+<h1>Calculadora</h1>
+<main>
+<section class="calculadora">
+<h2>Calculadora Fechas</h2>
+
+
+
+
+<label for="año">Año:</label> 
+<input disabled="disabled" type="text" id="año">
+<label for="mes">Mes:</label> 
+<input disabled="disabled" type="text" id="mes">
+<label for="dia">Dia:</label> 
+<input disabled="disabled" type="text" id="dia">
+
+<label for="pila">Pila:</label> 
+<textarea id="pila" disabled="disabled">Pila[31] = Sun Feb 01 2015 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[30] = Fri Feb 06 2015 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[29] = Sat May 02 2015 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[28] = Sun May 03 2015 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[27] = Mon Jun 01 2015 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[26] = Tue Sep 15 2015 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[25] = Thu Oct 08 2015 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[24] = Thu Nov 12 2015 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[23] = Wed Dec 02 2015 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[22] = Thu Jan 07 2016 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[21] = Fri Jan 08 2016 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[20] = Mon Jan 25 2016 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[19] = Mon Feb 01 2016 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[18] = Sat Feb 06 2016 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[17] = Sun Apr 24 2016 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[16] = Mon Apr 25 2016 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[15] = Thu Jun 02 2016 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[14] = Thu Sep 15 2016 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[13] = Sat Oct 08 2016 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[12] = Sat Nov 12 2016 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[11] = Thu Dec 01 2016 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[10] = Fri Jan 06 2017 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[9] = Sun Jan 08 2017 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[8] = Thu Jan 26 2017 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[7] = Thu Feb 02 2017 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[6] = Mon Feb 06 2017 00:00:00 GMT+0100 (hora estándar de Europa central)
+Pila[5] = Sat May 13 2017 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[4] = Sun May 14 2017 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[3] = Thu Jun 01 2017 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[2] = Fri Sep 15 2017 00:00:00 GMT+0200 (hora de verano de Europa central)
+Pila[1] = Sun Oct 08 2017 00:00:00 GMT+0200 (hora de verano de Europa central)
+</textarea>
+
+
+<input type="button" value="C" onclick="calculadora.borrarFecha()">
+<input type="button" value="DEL" onclick="calculadora.back()">
+<input id="btAño" type="button" value="Dia" onclick="calculadora.cambiarInput()">
+
+<input type="button" value="Enter" onclick="calculadora.enterFecha()">
+<input type="button" value="Dias" onclick="calculadora.restaDias()">
+
+
+
+<input type="button" value="0" onclick="calculadora.digitoFecha('0')">
+<input type="button" value="1" onclick="calculadora.digitoFecha('1')">
+<input type="button" value="2" onclick="calculadora.digitoFecha('2')">
+<input type="button" value="3" onclick="calculadora.digitoFecha('3')">
+
+<input type="button" value="4" onclick="calculadora.digitoFecha('4')">
+<input type="button" value="5" onclick="calculadora.digitoFecha('5')">
+<input type="button" value="6" onclick="calculadora.digitoFecha('6')">
+
+<input type="button" value="7" onclick="calculadora.digitoFecha('7')">
+<input type="button" value="8" onclick="calculadora.digitoFecha('8')">
+<input type="button" value="9" onclick="calculadora.digitoFecha('9')">
+
+
+
+<p>Festivos en toda Asturias entre ambas fechas (Datos de 2015 a 2020)</p>
+<input type="button" value="Comprobar" onclick="calculadora.getFestivos()">
+
+<label for="info">Información:</label> 
+<textarea id="info" disabled="disabled"></textarea>
+
+
+
+
+
+</section>
+</main>
+
+</body></html>
