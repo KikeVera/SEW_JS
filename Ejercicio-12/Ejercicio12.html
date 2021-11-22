@@ -16,25 +16,25 @@
 	
 	
 	
-	
     <title>Lector archivos</title> 
 </head>
 
 <body>
     
 	
-    <h1 id="titulo">Lector archivos</h1>
-	
+    <h1>Lector archivos</h1>
+	<p>Seleccione uno mas archivos para comprobar sus datos y su texto en caso de tener</p>
 	<label for="archivoTexto">Seleccione archivo de texto:</label> 
-   <input type="file" id="archivoTexto" onchange="lector.leerArchivo(this.files);" multiple>
+   <input type="file" id="archivoTexto" onchange="lector.leerArchivo(this.files)" multiple>
+   
+	<h2>Datos</h2>
+	<label for="datos">Datos del archivo examinado:</label> 
+	<textarea id="datos" disabled="disabled"></textarea>
 	
-	<h2>Datos archivo</h2>
-	<p>Datos del archivo examinado</p>
-	<textarea disabled="disabled"></textarea>
+	<h2>Texto</h2>
+	<label for="texto">Contenido del archivo examinado:</label> 
 	
-	<h2>Contenido archivo</h2>
-	<p>Contenido del archivo examinado</p>
-	<textarea disabled="disabled"></textarea>
+	<textarea id="texto" disabled="disabled"></textarea>
 	
 	
 	
