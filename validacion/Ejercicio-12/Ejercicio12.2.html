@@ -1,0 +1,749 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Ejercicio12.css">
+	<script src="Ejercicio12.js"></script>
+	<script>var lector= new Lector()</script>
+	
+	
+	
+	
+	
+	
+	
+    <title>Lector archivos</title> 
+</head>
+
+<body>
+    
+	
+    <h1>Lector archivos</h1>
+	<p>Seleccione uno mas archivos para comprobar sus datos y su texto en caso de tener</p>
+	<label for="archivoTexto">Seleccione archivo de texto:</label> 
+   <input type="file" id="archivoTexto" onchange="lector.leerArchivo(this.files)" multiple="">
+   
+	<h2>Datos</h2>
+	<label for="datos">Datos del archivo examinado:</label> 
+	<textarea id="datos" disabled="disabled">Nombre del archivo: ejemplo.json
+Tamaño del archivo: 682 bytes
+Tipo del archivo: application/json
+Fecha de la última modificación: Mon Nov 22 2021 05:58:24 GMT+0100 (hora estándar de Europa central)
+Nombre del archivo: ejemplo.txt
+Tamaño del archivo: 1293 bytes
+Tipo del archivo: text/plain
+Fecha de la última modificación: Mon Nov 22 2021 05:58:24 GMT+0100 (hora estándar de Europa central)
+Nombre del archivo: ejemplo.json
+Tamaño del archivo: 682 bytes
+Tipo del archivo: application/json
+Fecha de la última modificación: Mon Nov 22 2021 05:58:24 GMT+0100 (hora estándar de Europa central)
+Nombre del archivo: ejemplo.xml
+Tamaño del archivo: 13090 bytes
+Tipo del archivo: text/xml
+Fecha de la última modificación: Mon Nov 22 2021 05:58:24 GMT+0100 (hora estándar de Europa central)
+</textarea>
+	
+	<h2>Texto</h2>
+	<label for="texto">Contenido del archivo examinado:</label> 
+	
+	<textarea id="texto" disabled="disabled">
+ Error : no se puede leer el contenido del archivoEl problema de las N reinas es un puzle que consiste en poner N reinas en un tablero de ajedrez de N x N sin que se amenacen, originalmente el problema se realizaba solo con 8 reinas en un tablero de ajedrez convencional, pero el problema se ha extrapo-lado a diferentes tamaños encontrando todas las soluciones hasta un valor de N=26 e intentos y dimensiones mucho mayores que llevan cantidad de tiempo enormes resolver, en [1] hay información más desarrollada.
+
+Los métodos más tradicionales para resolver el problema son los algoritmos recursi-vos, el más básico es por backtracking a fuerza bruta, es decir, explorando todos los casos hasta encontrar una solución, lo cual hace el problema escale de forma expo-nencial haciéndolo inviable en problemas muy grandes. Usando backtracking con búsqueda en profundidad y con” ramifica y poda”, eliminando aquellos nodos por donde ya es imposible encontrar una solución y quedándonos con la primera encon-trada el algoritmo mejora bastante. Sin embargo, hay otros métodos menos tradicio-nales con las que también se puede resolver el problema, como son la programación con restricciones, la programación lógica, los algoritmos genéticos y la búsqueda heurística [2]. Siendo los dos últimos los usados en este estudio.
+
+
+ Error : no se puede leer el contenido del archivo&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;arbol&gt;
+
+
+&lt;persona nombre="Enrique" apellidos="Vera Cueto"&gt;  &lt;!--Hijo--&gt;
+&lt;datos&gt;
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1996-11-19&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Oviedo&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5.873420193275075&lt;/longitud&gt;
+&lt;latitud&gt;43.341920421217154&lt;/latitud&gt;
+&lt;altitud&gt;232&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoHijo1.jpg&lt;/foto&gt;
+&lt;foto&gt;fotoHijo2.jpg&lt;/foto&gt;
+&lt;foto&gt;fotoHijo3.jpg&lt;/foto&gt;
+
+&lt;/fotografias&gt;
+
+
+&lt;videos&gt;
+&lt;video&gt;videoHijo1.mp4&lt;/video&gt;
+&lt;video&gt;videoHijo2.mp4&lt;/video&gt;
+&lt;video&gt;videoHijo3.mp4&lt;/video&gt;
+&lt;/videos&gt;
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario Enrique&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario Enrique&lt;/comentario&gt;
+&lt;comentario&gt;Tercer comentario Enrique&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+
+&lt;persona nombre="Pablo" apellidos="Vera de la Puente"&gt; &lt;!--Padre--&gt;
+&lt;datos&gt;
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1965-03-25&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Oviedo&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5.874420193275075&lt;/longitud&gt;
+&lt;latitud&gt;43.341920421217154&lt;/latitud&gt;
+&lt;altitud&gt;232&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoPadre1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+&lt;videos&gt;
+&lt;video&gt;videoPadre1.mp4&lt;/video&gt;
+&lt;/videos&gt;
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario Pablo&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario Pablo&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+&lt;persona nombre="Enrique" apellidos="Vera González"&gt; &lt;!--Abuelo paterno--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1918-07-15&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Burgos&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-3.716286&lt;/longitud&gt;
+&lt;latitud&gt;42.284055&lt;/latitud&gt;
+&lt;altitud&gt;872&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1996-04-10&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Latores&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-5.879365&lt;/longitud&gt;
+&lt;latitud&gt;43.311533&lt;/latitud&gt;
+&lt;altitud&gt;165&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoPadreAbuelo1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+&lt;persona nombre="Enrique" apellidos="Vera Sancha"&gt; &lt;!--Bisabuelo paterno paterno--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1890-02-22&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Villamayor de los Montes&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-3.765112&lt;/longitud&gt;
+&lt;latitud&gt;42.097845&lt;/latitud&gt;
+&lt;altitud&gt;907&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1971-07-10&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Lerma&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-3.787987&lt;/longitud&gt;
+&lt;latitud&gt;41.992695&lt;/latitud&gt;
+&lt;altitud&gt;912&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoPadreAbueloBisabuelo1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+&lt;/persona&gt;
+&lt;persona nombre="Clotilde" apellidos="González Vera"&gt; &lt;!--Bisabuela paterna paterna--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1892-08-16&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Santoña&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-3.485646&lt;/longitud&gt;
+&lt;latitud&gt;43.364921&lt;/latitud&gt;
+&lt;altitud&gt;33&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1971-09-09&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Lerma&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-3.787987&lt;/longitud&gt;
+&lt;latitud&gt;41.992695&lt;/latitud&gt;
+&lt;altitud&gt;912&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoPadreAbueloBisabuela1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+&lt;/persona&gt;
+&lt;/persona&gt;
+&lt;persona nombre="Carmen" apellidos="de la Puente de la Puente"&gt; &lt;!--Abuela paterna--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1926-01-20&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Burgos&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-3.716292&lt;/longitud&gt;
+&lt;latitud&gt;42.284062&lt;/latitud&gt;
+&lt;altitud&gt;865&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;2018-01-28&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Latores&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-5.879365&lt;/longitud&gt;
+&lt;latitud&gt;43.311533&lt;/latitud&gt;
+&lt;altitud&gt;165&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoPadreAbuela1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+&lt;persona nombre="Luis" apellidos="de la Puente López"&gt; &lt;!--Bisabuelo paterno materno--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1896-03-18&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Burgos&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-3.716298&lt;/longitud&gt;
+&lt;latitud&gt;42.284043&lt;/latitud&gt;
+&lt;altitud&gt;872&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1983-04-18&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Madrid&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-3.732979&lt;/longitud&gt;
+&lt;latitud&gt;40.348525&lt;/latitud&gt;
+&lt;altitud&gt;620&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoPadreAbuelaBisabuelo1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+
+
+&lt;/persona&gt;
+&lt;persona nombre="Carmen" apellidos="de la Puente Medina"&gt; &lt;!--Bisabuela paterna materna--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1898-10-22&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Briviesca&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-3.337606&lt;/longitud&gt;
+&lt;latitud&gt;42.548809&lt;/latitud&gt;
+&lt;altitud&gt;751&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1983-06-27&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Madrid&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-3.732979&lt;/longitud&gt;
+&lt;latitud&gt;40.348525&lt;/latitud&gt;
+&lt;altitud&gt;620&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoPadreAbuelaBisabuela1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+
+
+&lt;/persona&gt;
+&lt;/persona&gt;
+
+
+&lt;/persona&gt;
+
+
+
+&lt;persona nombre="María" apellidos="Cueto Sánchez"&gt; &lt;!--Madre--&gt;
+&lt;datos&gt;
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1966-07-22&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Oviedo&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5.873520193275075&lt;/longitud&gt;
+&lt;latitud&gt;43.241920421217154&lt;/latitud&gt;
+&lt;altitud&gt;232&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoMadre1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario Enrique&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario Enrique&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+&lt;persona nombre="Jose Luis" apellidos="Cueto Fernández"&gt; &lt;!--Abuelo materno--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1924-09-12&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Coviella&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5.173368&lt;/longitud&gt;
+&lt;latitud&gt;43.382490&lt;/latitud&gt;
+&lt;altitud&gt;89&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1998-08-12&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Oviedo&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-5.870055&lt;/longitud&gt;
+&lt;latitud&gt;43.354016&lt;/latitud&gt;
+&lt;altitud&gt;280&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoMadreAbuelo1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+&lt;persona nombre="Manuel" apellidos="Cueto Arias"&gt; &lt;!--Bisabuelo materno paterno--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1895-07-07&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Arriondas&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5.180138&lt;/longitud&gt;
+&lt;latitud&gt;43.375815&lt;/latitud&gt;
+&lt;altitud&gt;36&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1964-11-12&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Coviella&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-5.178672&lt;/longitud&gt;
+&lt;latitud&gt;43.376511&lt;/latitud&gt;
+&lt;altitud&gt;92&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoMadreAbueloBisabuelo1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+
+
+&lt;/persona&gt;
+&lt;persona nombre="Remedios" apellidos="Fernández Onís"&gt; &lt;!--Bisabuela materna paterna--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1897-09-06&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Cangas de Onís&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5.137427&lt;/longitud&gt;
+&lt;latitud&gt;43.336599&lt;/latitud&gt;
+&lt;altitud&gt;89&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1963-02-13&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Coviella&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-5.179015&lt;/longitud&gt;
+&lt;latitud&gt;43.379211&lt;/latitud&gt;
+&lt;altitud&gt;89&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoMadreAbueloBisabuela1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+
+
+&lt;/persona&gt;
+&lt;/persona&gt;
+&lt;persona nombre="Francisca" apellidos="Sánchez Iglesias"&gt; &lt;!--Abuela materna--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1928-04-19&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Coviella&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5.178289&lt;/longitud&gt;
+&lt;latitud&gt;43.379628&lt;/latitud&gt;
+&lt;altitud&gt;94&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;2019-11-18&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Lugones&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-5.819436&lt;/longitud&gt;
+&lt;latitud&gt;43.391479&lt;/latitud&gt;
+&lt;altitud&gt;155&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoMadreAbuela1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+&lt;persona nombre="Ramón" apellidos="Sánchez García"&gt; &lt;!--Bisabuelo materno materno--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1900-02-19&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Ribadesella&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5.063423&lt;/longitud&gt;
+&lt;latitud&gt;43.453992&lt;/latitud&gt;
+&lt;altitud&gt;10&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1963-10-16&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Coviella&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-5.180984&lt;/longitud&gt;
+&lt;latitud&gt;43.381821&lt;/latitud&gt;
+&lt;altitud&gt;76&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoMadreAbuelaBisabuelo1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+
+
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+
+
+&lt;/persona&gt;
+&lt;persona nombre="Ascensión" apellidos="Iglesias Villar"&gt; &lt;!--Bisabuela materna materna--&gt;
+&lt;datos&gt;
+
+&lt;datosNacimiento&gt;
+&lt;fechaNacimiento&gt;1902-02-06&lt;/fechaNacimiento&gt;
+&lt;lugarNacimiento&gt;Triongo&lt;/lugarNacimiento&gt;
+&lt;coordenadasNacimiento&gt;
+&lt;longitud&gt;-5172664&lt;/longitud&gt;
+&lt;latitud&gt;43.37758&lt;/latitud&gt;
+&lt;altitud&gt;35&lt;/altitud&gt;
+
+
+&lt;/coordenadasNacimiento&gt;
+&lt;/datosNacimiento&gt;
+
+&lt;datosFallecimiento&gt;
+&lt;fechaFallecimiento&gt;1964-07-19&lt;/fechaFallecimiento&gt;
+&lt;lugarFallecimiento&gt;Almadén&lt;/lugarFallecimiento&gt;
+&lt;coordenadasFallecimiento&gt;
+&lt;longitud&gt;-4.834119&lt;/longitud&gt;
+&lt;latitud&gt;38.774236&lt;/latitud&gt;
+&lt;altitud&gt;81&lt;/altitud&gt;
+
+
+&lt;/coordenadasFallecimiento&gt;
+&lt;/datosFallecimiento&gt;
+
+&lt;fotografias&gt;
+&lt;foto&gt;fotoMadreAbuelaBisabuela1.jpg&lt;/foto&gt;
+
+
+&lt;/fotografias&gt;
+
+&lt;comentarios&gt;
+&lt;comentario&gt;Primer comentario xxxx&lt;/comentario&gt;
+&lt;comentario&gt;Segundo comentario xxx&lt;/comentario&gt;
+
+&lt;/comentarios&gt;
+
+
+&lt;/datos&gt;
+
+
+&lt;/persona&gt;
+&lt;/persona&gt;
+
+&lt;/persona&gt;
+
+
+&lt;/persona&gt;
+
+
+&lt;/arbol&gt;
+</textarea>
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+   
+	
+	
+	
+
+
+</body></html>

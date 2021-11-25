@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+	<script src="Ejercicio14.js"></script>
+	
+	<script>var contador= new Contador()</script>
+	
+	<script>contador.definirFuncion()</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <title>Contador</title> 
+</head>
+
+<body>
+    
+	
+    <h1 >Contador</h1>
+	
+	<label for="archivoTexto">Seleccione archivo de texto:</label> 
+   <input type="file" id="archivoTexto" onchange="contador.leerArchivo(this.files);" multiple>
+   <div>
+	<input type="button" value="Mostrar palabras mas comunes" onclick="contador.mostrar()">
+	</div>
+   <div>
+	<input type="button" value="Limpiar Registro" onclick="contador.limpiar()">
+	</div>
+	<h2>Palabras mas repetidas</h2>
+	<p>Grafico con las palabras mas comunes en todos los archivos desde la última limpieza de registro (longitud igual o mayor a 4).</p>
+	
+	
+	
+	<canvas ></canvas>
+
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+   
+	
+	
+	
+</body>
+</html>

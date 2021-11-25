@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Ejercicio12.css">
+	<script src="Ejercicio12.js"></script>
+	<script>var lector= new Lector()</script>
+	
+	
+	
+	
+	
+	
+	
+    <title>Lector archivos</title> 
+</head>
+
+<body>
+    
+	
+    <h1>Lector archivos</h1>
+	<p>Seleccione uno mas archivos para comprobar sus datos y su texto en caso de tener</p>
+	<label for="archivoTexto">Seleccione archivo de texto:</label> 
+   <input type="file" id="archivoTexto" onchange="lector.leerArchivo(this.files)" multiple="">
+   
+	<h2>Datos</h2>
+	<label for="datos">Datos del archivo examinado:</label> 
+	<textarea id="datos" disabled="disabled"></textarea>
+	
+	<h2>Texto</h2>
+	<label for="texto">Contenido del archivo examinado:</label> 
+	
+	<textarea id="texto" disabled="disabled"></textarea>
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+   
+	
+	
+	
+
+
+</body></html>

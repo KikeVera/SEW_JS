@@ -33,7 +33,7 @@ class GeoL{
 			
 			$.ajax({
 			dataType: "json",
-			url: "https://maps.googleapis.com/maps/api/geocode/json?address="+document.getElementById("direccion").value+"CA&key=AIzaSyAoAdfDnwfjlipFtRhfrTS8M0UFdt8UxHY",
+			url: "https://maps.googleapis.com/maps/api/geocode/json?address="+document.getElementById("direccion").value+"CA&key=AIzaSyAWTzpQ3_JOSY0tg6FNtmZKk8XS44Q_jRc",
             method: 'GET',
             success: function(datos){
 				

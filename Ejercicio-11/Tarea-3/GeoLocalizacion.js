@@ -60,7 +60,7 @@ class GeoL{
 	mostrarMapa(){
         
         
-        var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
+        var apiKey = "&key=AIzaSyAWTzpQ3_JOSY0tg6FNtmZKk8XS44Q_jRc";
        
         var url = "https://maps.googleapis.com/maps/api/staticmap?";
         

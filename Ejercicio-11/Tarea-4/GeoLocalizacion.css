@@ -61,7 +61,7 @@ h1 {
 
 
 @media (max-width: 450px) {
-     #titulo{
+     h1{
        
 	   font-size: 1.5em;
      }

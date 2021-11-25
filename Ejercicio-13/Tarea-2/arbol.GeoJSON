@@ -1,0 +1,304 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.873420193275075,43.341920421217154,232]
+      },
+      "properties": {
+        "name": "Nacimiento: Enrique Vera Cueto"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.874420193275075,43.341920421217154,232]
+      },
+      "properties": {
+        "name": "Nacimiento: Pablo Vera de la Puente"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.716286,42.284055,872]
+      },
+      "properties": {
+        "name": "Nacimiento: Enrique Vera González"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.879365,43.311533,165]
+      },
+      "properties": {
+        "name": "Fallecimiento: Enrique Vera González"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.765112,42.097845,907]
+      },
+      "properties": {
+        "name": "Nacimiento: Enrique Vera Sancha"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.787987,41.992695,912]
+      },
+      "properties": {
+        "name": "Fallecimiento: Enrique Vera Sancha"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.485646,43.364921,33]
+      },
+      "properties": {
+        "name": "Nacimiento: Clotilde González Vera"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.787987,41.992695,912]
+      },
+      "properties": {
+        "name": "Fallecimiento: Clotilde González Vera"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.716292,42.284062,865]
+      },
+      "properties": {
+        "name": "Nacimiento: Carmen de la Puente de la Puente"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.716292,42.284062,865]
+      },
+      "properties": {
+        "name": " Fallecimiento: Carmen de la Puente de la Puente"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.716298,42.284043,872]
+      },
+      "properties": {
+        "name": "Nacimiento: Luis de la Puente López"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.732979,40.348525,620]
+      },
+      "properties": {
+        "name": "Fallecimiento: Luis de la Puente López"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.337606,42.548809,751]
+      },
+      "properties": {
+        "name": "Nacimiento: Carmen de la Puente Medina"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.732979,40.348525,620]
+      },
+      "properties": {
+        "name": "Fallecimiento: Carmen de la Puente Medina"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.873520193275075,43.241920421217154,232]
+      },
+      "properties": {
+        "name": "Nacimiento: María Cueto Sánchez"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.173368,43.382490,89]
+      },
+      "properties": {
+        "name": "Nacimiento: Jose Luis Cueto Fernández"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.870055,43.354016,280]
+      },
+      "properties": {
+        "name": "Fallecimiento: Jose Luis Cueto Fernández"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.180138,43.375815,36]
+      },
+      "properties": {
+        "name": "Nacimiento: Manuel Cueto Arias"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.178672,43.376511,92]
+      },
+      "properties": {
+        "name": "Fallecimiento: Manuel Cueto Arias"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.137427,43.336599,89]
+      },
+      "properties": {
+        "name": "Nacimiento: Remedios Fernández Onís"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.179015,43.379211,89]
+      },
+      "properties": {
+        "name": "Fallecimiento: Remedios Fernández Onís"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.178289,43.379628,94]
+      },
+      "properties": {
+        "name": "Nacimiento: Francisca Sánchez Iglesias"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.819436,43.391479,155]
+      },
+      "properties": {
+        "name": "Fallecimiento: Francisca Sánchez Iglesias"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.063423,43.453992,10]
+      },
+      "properties": {
+        "name": "Nacimiento: Ramón Sánchez García"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.180984,43.381821,76]
+      },
+      "properties": {
+        "name": "Fallecimiento: Ramón Sánchez García"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5172664,43.37758,35]
+      },
+      "properties": {
+        "name": "Nacimiento: Ascensión Iglesias Villar"
+   		
+      }
+    },
+	{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.834119,38.774236,81]
+      },
+      "properties": {
+        "name": "Fallecimiento: Ascensión Iglesias Villar"
+   		
+      }
+    }
+	
+    
+  ]
+}
