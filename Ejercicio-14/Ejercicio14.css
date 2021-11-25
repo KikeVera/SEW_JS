@@ -9,17 +9,17 @@ body {
 	 position:relative;
 	  
   }
- /*Especificidad: 001*/ 
+  /*Especificidad: 001*/
 h1 {
-	  font: 400 3em ARIAL, sans-serif ;		
-   
-	  background-size: cover;
-	  background-repeat: no-repeat;
+	  font: 400 2em ARIAL, sans-serif ;		
+    
+	  
+	
     background-color:#000000;
       color: #FFFFFF;
       text-transform: uppercase;
-	  padding: 1.8em 1em;
-	  position:relative;
+	  padding: 1.7em 1em;
+	 
 	  text-align:center;
     
   }
@@ -29,12 +29,12 @@ h1 {
   /*Especificidad: 001*/
   h2{
 	  
-	  font: 400 1.6em ARIAL, sans-serif;
+	  font: 400 1.5em ARIAL, sans-serif;
 	  
 	  background-color:#E3E4E5;
 	  color: #000000;
 	  text-decoration:underline;
-	  position:relative;
+	  
 	text-align:center;
 	  
   }
@@ -42,13 +42,11 @@ h1 {
   /*Especificidad: 001*/
   h3{
 	  
-	  font: 400 1.2em ARIAL, sans-serif;
-	  
+	  font: 400 1.3em ARIAL, sans-serif;
 	  background-color:#E3E4E5;
 	  color: #000000;
-	  text-decoration:underline;
-	  position:relative;
-	text-align:center;
+	  
+	text-align:left;
 	  
   }
   
@@ -111,14 +109,7 @@ h1 {
 	  overflow:auto;
   }
   
-  @media (max-width: 450px) {
-	  /*Especificidad: 001*/
-     h1{
-       
-	   font-size: 2em;
-     }
-	 
-  }
+  
 	
 	
 
