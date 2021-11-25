@@ -5,7 +5,7 @@
     <!-- Datos que describen el documento -->
 	
     <meta charset="utf-8"/>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
 	<script src="MapaGeoJSON.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -33,9 +33,10 @@
 	<label for="archivoTexto">Seleccione archivo GeoJSON:</label> 
    <input type="file" id="archivoTexto" onchange="mapaGeoJSON.leerArchivo(this.files);">
 	
-	<h2>Mapa</h2>
+	
 	<p>Mapa con los GeoJSON cargados.</p>
 	<main></main>
+		<p>Texto en español para que la herramienta de validación TAW me detecte bien el idioma</p>
 	
 	
 	
