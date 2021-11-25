@@ -61,11 +61,7 @@ h1 {
   
   
   
-  
-  #palabras{
-	  width:100%;
-	  height:50em;
-  }
+ 
   
   
   
@@ -101,7 +97,7 @@ h1 {
 	  color: #000000;
   }
   
-  #canvas{
+  canvas{
 	  width:100%;
 	  height:30em;
 	  color: #000000;
@@ -110,7 +106,7 @@ h1 {
   }
   
   @media (max-width: 450px) {
-     #titulo{
+     h1{
        
 	   font-size: 2em;
      }

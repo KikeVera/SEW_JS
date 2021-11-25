@@ -94,7 +94,7 @@ class Contador{
 		
 		if(maximo!=0){
 			palabras=this.ordenar(palabras);
-			var canvas = document.getElementById('canvas');
+			var canvas = document.getElementsByTagName('canvas')[0];
 			var canvas1 = canvas.getContext('2d');
 			canvas1.clearRect(0, 0, canvas.width, canvas.height);
 
