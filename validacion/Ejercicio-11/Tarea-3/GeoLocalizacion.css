@@ -77,6 +77,10 @@ h1 {
 	   height:1.5em;
   }
   
+  section{
+	  overflow-x: auto;
+  }
+  
   
  
   
