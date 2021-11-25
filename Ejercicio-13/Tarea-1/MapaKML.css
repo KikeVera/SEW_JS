@@ -64,36 +64,7 @@ h1 {
   
  
  
-  /*Especificidad: 011*/
-  input[type=button]{
-	  
-	  
-	
-	  font: 400 1em ARIAL, sans-serif;
-	  color: #FFFFFF;
-	   background-color:#626262;
-	   
-	   width:10em;
-	   height:2em;
-  }
-  
 
- /*Especificidad: 011*/
-  input[type=text]{
-	  font: 400 1.2em ARIAL, sans-serif;
-	  margin-bottom:1em;
-	  height:1.5em;
-	  width: 30%;
-	  
-  }
-  
-  /*Especificidad: 001*/
-  label{
-	  font: 400 1em ARIAL, sans-serif;
-	  background-color:#E3E4E5;
-	  color: #000000;
-  }
-  
   
   
   
