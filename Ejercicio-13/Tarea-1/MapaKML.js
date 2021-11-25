@@ -10,7 +10,7 @@ class MapaKML{
 	definirFuncion(){
 		this.initMap=function initMap(){
 			var centro = {lat: this.a, lng: this.b};
-			var mapa = new google.maps.Map(document.getElementsByTagName('main')[0],{zoom: 8,center:centro});
+			var mapa = new google.maps.Map(document.getElementById('map'),{zoom: 8,center:centro});
 			
 			
 		}
