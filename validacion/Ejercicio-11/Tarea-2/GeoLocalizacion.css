@@ -1,3 +1,4 @@
+/*Especificidad: 001*/
 body {
 	  
       font:400 1em ARIAL, sans-serif; 
@@ -8,6 +9,8 @@ body {
 	
 	  
   }
+
+/*Especificidad: 001*/
 h1 {
 	  font: 400 3em ARIAL, sans-serif ;		
     
@@ -24,7 +27,7 @@ h1 {
   
   
   
-  
+  /*Especificidad: 001*/
   h2{
 	  
 	  font: 400 1.8em ARIAL, sans-serif;
@@ -37,7 +40,7 @@ h1 {
 	  
   }
   
-  
+  /*Especificidad: 001*/
   h3{
 	  
 	  font: 400 1.5em ARIAL, sans-serif;
@@ -49,7 +52,7 @@ h1 {
   }
   
   
-  
+  /*Especificidad: 001*/
   li{
 	  
 	  list-style-type: square;
@@ -61,7 +64,7 @@ h1 {
   }
   
   
- 
+ /*Especificidad: 011*/
   input[type=button]{
 	  
 	  
@@ -75,6 +78,7 @@ h1 {
   }
   
   @media (max-width: 450px) {
+	/*Especificidad: 001*/
     h1{
        
 	   font-size: 1.5em;

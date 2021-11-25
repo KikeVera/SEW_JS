@@ -1,10 +1,11 @@
+/*Especificidad: 001*/
 body{
 	 font: 400 1em ARIAL, sans-serif;
 	color: #000000;
 	background-color:#E3E4E5;
 }
 
-
+/*Especificidad: 001*/
 h1{
 	
 	font: 400 2em ARIAL, sans-serif;
@@ -17,6 +18,7 @@ h1{
 	
 }
 
+/*Especificidad: 001*/
 h2{
 	 grid-column: span 4;
 	  font: 400 1.8em ARIAL, sans-serif;
@@ -29,14 +31,14 @@ h2{
   }
 
 
-
+/*Especificidad: 001*/
 main{
 	  display: flex;
 	  
    
 }
  
-  
+  /*Especificidad: 001*/
   section{
 	  
 	  margin: auto;
@@ -51,7 +53,7 @@ main{
 	
 	 
   }
-  
+  /*Especificidad: 011*/
   input[type=text]{
 	  
 	  grid-column: span 3;
@@ -66,7 +68,7 @@ main{
 	   
   }
   
-  
+  /*Especificidad: 001*/
   label{
 	
 	  font: 400 1.5em ARIAL, sans-serif;
@@ -75,7 +77,7 @@ main{
 	  
   }
   
-  
+  /*Especificidad: 011*/
   input[type=button]{
 	  
 	 
@@ -89,24 +91,28 @@ main{
 	   
   }
 
+  /*Especificidad: 011*/
   input[value="mrc"]{
 
 	color: #FFFFFF;
  	background-color:#000000;
   }
 
+  /*Especificidad: 011*/
   input[value="m-"]{
 
 	color: #FFFFFF;
  	background-color:#000000;
   }
 
+  /*Especificidad: 011*/
   input[value="m+"]{
 
 	color: #FFFFFF;
  	background-color:#000000;
   }
 
+  /*Especificidad: 011*/
   input[value="/"]{
 
 	color: #FFFFFF;
@@ -114,24 +120,28 @@ main{
   }
 
 
+  /*Especificidad: 011*/
   input[value="x"]{
 
 	color: #FFFFFF;
  	background-color:#8B0000;
   }
 
+  /*Especificidad: 011*/
   input[value="-"]{
 
 	color: #FFFFFF;
  	background-color:#8B0000;
   }
 
+  /*Especificidad: 011*/
   input[value="+"]{
 
 	color: #FFFFFF;
  	background-color:#8B0000;
   }
 
+  /*Especificidad: 011*/
   input[value="="]{
 
 	color: #FFFFFF;
