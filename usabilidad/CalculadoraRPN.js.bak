@@ -315,8 +315,3 @@ class CalculadoraRPN{
 		document.getElementsByTagName('textarea')[0].innerHTML=representacion;
 	}
 }
-
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}

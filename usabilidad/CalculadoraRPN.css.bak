@@ -177,7 +177,7 @@ main{
   z-index: 1;
   bottom: 125%;
   left: 80%;
-  margin-left: 80px;
+  margin-left: -80px;
 }
 
 /* Popup arrow */

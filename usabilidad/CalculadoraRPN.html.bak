@@ -81,7 +81,7 @@
 </section>
 </main>
 <div class="popup" onclick="myFunction()">Ayuda/Cerrar Ayuda
-  <span class="popuptext" id="myPopup">Esta calculadora se trata de una calculadora RPN, todos los calculos que realice se harán en la pila, por lo que primero se deben introducir elementos en la Pila
+  <span class="popuptext" id="myPopup">Esta calculadora se tratá de una calculadora RPN, todos los calculos que realice se harán en la pila, por lo que primero se deben introducir elementos en la Pila
   con "Enter" y luego realizar cualquiera de las operaciones, las cuales se efecturán sobre el último o dos últimos elementos. La pila tiene capacidad para infiitos elementos</span>
 </div>
 
